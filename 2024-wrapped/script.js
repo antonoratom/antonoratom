@@ -1,4 +1,15 @@
 if (window.innerWidth > 991) {
+  function countAndUpdateText() {
+    const divs = document.querySelectorAll("div.for-2024_case-pleasure");
+    const count = divs.length;
+    // console.log(`Number of divs with class .for-2024_case-pleasure: ${count}`);
+    const textElement = document.querySelector("span.this-text");
+    if (count === 1 && textElement) {
+      textElement.textContent = "this"; // Update the text
+    }
+  }
+  document.addEventListener("DOMContentLoaded", countAndUpdateText);
+
   const heroDuration = 4;
   const textBlurDuration = 2;
 
@@ -141,7 +152,7 @@ if (window.innerWidth > 991) {
     setTimeout(() => {
       customScrollbar.style.opacity = 1;
       customScrollbar.style.transform = "translateX(0px)";
-    }, 1000);
+    }, 600);
 
     let firstScrollDownCTA = gsap.timeline({
       defaults: { duration: 1 },
