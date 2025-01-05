@@ -227,7 +227,7 @@ if (window.innerWidth > 991) {
     //---------LENIS SCROLL---------//
     let lenis = new Lenis({
       lerp: 0.1,
-      wheelMultiplier: 0.4,
+      wheelMultiplier: 0.75,
       gestureOrientation: "vertical",
       normalizeWheel: false,
       smoothTouch: false,
